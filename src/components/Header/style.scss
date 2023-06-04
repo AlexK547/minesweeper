@@ -1,0 +1,30 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(211, 237, 220);
+  margin: 0 auto;
+
+  &__wrapper {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
+  &__title {
+    color: #000;
+  }
+
+  @media screen and (max-width: 1400px) {
+    &__wrapper {
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    &__wrapper {
+      width: 300px;
+    }
+  }
+}
