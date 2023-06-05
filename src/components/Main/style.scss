@@ -1,0 +1,65 @@
+.main {
+  height: calc(100% - 100px);
+  width: 100%;
+  margin: 0 auto;
+
+  &__wrapper {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+
+  @media screen and (max-width: 1400px) {
+    &__wrapper {
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    &__wrapper {
+      width: 300px;
+    }
+  }
+}
+
+.sizes {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  &__btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 1px 0 darkgreen;
+    }
+  }
+  &__btn_select {
+    background-color: rgb(174, 212, 135);
+  }
+}
+
+.quantity {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  &__title {
+    font-size: 20px;
+  }
+  &__input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+  }
+}
+
